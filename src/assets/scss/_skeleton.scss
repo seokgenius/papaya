@@ -1,0 +1,39 @@
+.skeleton-cnt{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.skeleton-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 306px;
+  padding:10px;
+  background-color:#fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(15, 15, 21, 0.05);
+}
+
+.skeleton-inner{
+  width: 100%;
+  height: 100%;
+  //background-image 로 각 요소들의 선언된 색상으로 height 사이즈 표현할지 정함. linear-gradient(위,아래) 인자값 2개이면 컬러방향은 수직(위,아래)
+  background-image: radial-gradient(#f1f3f5 50%, transparent 0),
+  linear-gradient(#f1f3f5 16px, transparent 0),
+  linear-gradient(#f1f3f5 10px, transparent 0),
+  linear-gradient(#f1f3f5 10px, transparent 0),
+  linear-gradient(#f1f3f5 28px, transparent 0),
+  linear-gradient(#f1f3f5 14px, transparent 0),
+  linear-gradient(#f1f3f5 8px, transparent 0),
+  linear-gradient(#f1f3f5 14px, transparent 0),
+  linear-gradient(#f1f3f5 8px, transparent 0);
+  background-repeat: no-repeat;
+
+  background-size:120px 120px, 60% 306px, 50% 306px, 55% 306px, 28px 306px,
+  40px 306px, 56px 306px, 70% 306px, 70% 306px;
+
+  //background-position 요소들의 위치를 정해줌
+  background-position: 50% 20px, 50% 158px, 50% 188px, 50% 210px, 0 244px,
+  36px 244px, 36px 264px, 54px 244px, 54px 264px;
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <circle id="wz1ivcme9a" cx="9" cy="9" r="9"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <path fill="#FFF" fill-opacity="0" d="M0 0H24V24H0z" transform="translate(-290 -93) translate(260 80) translate(30 13)"/>
+                    <g transform="translate(-290 -93) translate(260 80) translate(30 13) translate(3 3)">
+                        <circle cx="9" cy="9" r="9" stroke="#373749" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                        <g>
+                            <mask id="qbtyvuq2vb" fill="#fff">
+                                <use xlink:href="#wz1ivcme9a"/>
+                            </mask>
+                            <path stroke="#373749" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.625 17.438c0-2.486-2.518-4.5-5.625-4.5s-5.625 2.014-5.625 4.5c0 0 2.798 1.662 5.625 1.662 2.798 0 5.625-1.663 5.625-1.663z" mask="url(#qbtyvuq2vb)"/>
+                        </g>
+                        <circle cx="9" cy="7.313" r="2.813" stroke="#373749" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

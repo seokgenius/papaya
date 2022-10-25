@@ -1,0 +1,51 @@
+@mixin columnWidth( $selector ){
+  &[data-column="1"]{
+    #{$selector}{width:100%;}
+  }
+  &[data-column="2"]{
+    #{$selector}{width:50%;}
+  }
+  &[data-column="3"]{
+    #{$selector}{width:33.33333%;}
+  }
+  &[data-column="4"]{
+    #{$selector}{width:25%;}
+  }
+  &[data-column="5"]{
+    #{$selector}{width:20%;}
+  }
+  &[data-column="6"]{
+    #{$selector}{width:16.6666667%;}
+  }
+  &[data-column="8"]{
+    #{$selector}{width:12.5%;}
+  }
+}
+
+/* absolute 설정 */
+@mixin pos-abs( $zIndex:null, $top:null, $left:null, $right:null, $bottom:null ){
+  z-index: $zIndex;
+  position:absolute;
+  top:$top;
+  left:$left;
+  right:$right;
+  bottom:$bottom;
+}
+
+/* absolute vertical align center */
+@mixin pos-vertical ($left:null, $right:null){
+  position:absolute;
+  top:50%;
+  left:$left;
+  right:$right;
+  transform:translateY(-50%);
+}
+
+
+@mixin abs-center($zIndex:null){
+  z-index: $zIndex;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+}

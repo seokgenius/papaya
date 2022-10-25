@@ -1,0 +1,19 @@
+<div id="app" class="wrapper">
+<!--  <AppHeader></AppHeader>-->
+  <transition name="fade" mode="out-in">
+    <router-view name="header"></router-view>
+  </transition>
+
+  <div class="container-fluid">
+    <transition name="fade" mode="out-in">
+      <!-- :key="$route.fullPath" -->
+      <router-view></router-view>
+    </transition>
+  </div>
+
+  <transition name="fade" mode="out-in">
+    <router-view name="footer"></router-view>
+  </transition>
+
+  <!--<AppFooter></AppFooter>-->
+</div>

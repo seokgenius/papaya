@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<meta content="" property="og:title" />
+	<meta content="" property="og:url" />
+	<meta content="" property="og:description" />
+	<meta content="" property="og:image" />
+	<meta content="website" property="og:type" />
+	<meta content="" property="og:site_name" />
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/pages.css" />
+</head>
+
+<body>
+<div class="popup">
+	<!-- popup-dialog : active 시 화면 노출 -->
+	<div class="popup-dialog active" style="width:600px;">
+		<!-- popup header -->
+		<div class="popup-header">
+			<p class="popup-header-tit">프로필 설정</p>
+			<div class="popup-close">
+				<button class="close"><img src="assets/images/close.svg" alt=""></button>
+			</div>
+		</div>
+		<!--// popup header -->
+
+		<!-- popup-body -->
+		<div class="popup-body">
+			<div class="class-profile">
+				<ul class="profile-list">
+					<li class="list-item">
+						<div class="tb-style full">
+							<div class="tb-cell list-tit">클래스 닉네임</div>
+							<div class="tb-cell basic-info">
+								<!-- basic-info-item에 class show -->
+								<p class="basic-info-item show">김지영선생님</p>
+								<div class="basic-info-item">
+									<input type="text" class="form-control" style="width:200px;">
+								</div>
+								<button type="button" class="edit-btn"><img src="assets/images/edit.svg" alt=""></button>
+							</div>
+						</div>
+					</li>
+					<li class="list-item">
+						<div class="tb-style full">
+							<div class="tb-cell list-tit">아이디</div>
+							<div class="tb-cell basic-info">
+								<p>papaya123</p>
+
+								<div class="list-popup">
+									<button type="button" class="list-popup-btn"><span>운영자에게만 공개</span> <img src="assets/images/arrow-right.svg" class="sm" alt=""></button>
+									<div class="list-popup-menu pos-right active" style="transform:translate3d(130px, 0, 0);">
+										<a href="" class="list-popup-item">비공개</a>
+										<a href="" class="list-popup-item">전체 공개</a>
+										<a href="" class="list-popup-item">운영자에게만 공개</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-item">
+						<div class="tb-style full">
+							<div class="tb-cell list-tit">모바일 번호</div>
+							<div class="tb-cell basic-info">
+								<p>010-1234-5678</p>
+								<div class="list-popup">
+									<button type="button" class="list-popup-btn"><span>비공개</span> <img src="assets/images/arrow-right.svg" class="sm" alt=""></button>
+									<div class="list-popup-menu pos-right active" style="transform:translate3d(75px, 0, 0);">
+										<a href="" class="list-popup-item">비공개</a>
+										<a href="" class="list-popup-item">공개</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-item">
+						<div class="tb-style full">
+							<div class="tb-cell list-tit">이메일 주소</div>
+							<div class="tb-cell basic-info">
+								<p>papaya@gmail.com</p>
+								<div class="list-popup">
+									<button type="button" class="list-popup-btn"><span>모든 클래스 멤버에게 공개</span> <img src="assets/images/arrow-right.svg" class="sm" alt=""></button>
+									<div class="list-popup-menu pos-right active" style="transform:translate3d(168px, 0, 0);">
+										<a href="" class="list-popup-item">모든 클래스 멤버에게 공개</a>
+										<a href="" class="list-popup-item">비공개</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--// popup-body -->
+
+		<!-- popup footer -->
+		<div class="popup-footer">
+			<div class="btn-group rt">
+				<button type="button" class="btn outline">취소</button>
+				<button type="button" class="btn primary navi">저장</button>
+			</div>
+		</div>
+		<!--// popup footer -->
+	</div>
+</div>
+</body>
+</html>

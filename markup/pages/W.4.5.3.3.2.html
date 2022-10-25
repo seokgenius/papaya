@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<meta content="" property="og:title" />
+	<meta content="" property="og:url" />
+	<meta content="" property="og:description" />
+	<meta content="" property="og:image" />
+	<meta content="website" property="og:type" />
+	<meta content="" property="og:site_name" />
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/pages.css" />
+</head>
+
+<body>
+<div class="popup">
+	<!-- popup-dialog : active 시 화면 노출 -->
+	<div class="popup-dialog active" style="width:600px;">
+		<!-- popup header -->
+		<div class="popup-header">
+			<p class="popup-header-tit">새 일정 등록</p>
+			<div class="popup-close">
+				<button class="close"><img src="assets/images/close.svg" alt=""></button>
+			</div>
+		</div>
+		<!--// popup header -->
+
+		<!-- popup-body -->
+		<div class="popup-body">
+			<div class="popup-form">
+				<div class="popup-form-top">
+					<div class="form-item post-classes selected"> <!-- class 선택 시 form-item에 selected 추가됨 -->
+						<p>
+							<span class="icon"><img src="assets/images/bg-icon.png" class="icon-img" alt=""></span>
+							<span class="gr-name">파파야초등학교</span>
+							<strong class="cls-name">꿈꾸는 5학년 1반</strong>
+						</p>
+					</div>
+					<div class="form-item">
+						<input type="text" class="form-control popup-type" placeholder="제목을 20자 이내로 작성해 주세요.">
+					</div>
+				</div>
+				<div class="popup-form-cnt">
+					<div class="form-item">
+						<p>하루종일</p>
+						<div class="form-box">
+							<div class="form-switcher">
+								<input type="checkbox" id="toggle1">
+								<label for="toggle1"></label>
+							</div>
+						</div>
+					</div>
+					<div class="form-item">
+						<p>시작일시</p>
+						<div class="form-box">
+							<div class="form-group date">
+								<input type="text" class="form-control" size="10" value="2020. 2. 28">
+								<span class="date-area">2020. 2. 28</span>
+								<button type="button" class="btn form-btn form-calendar active"></button>
+							</div>
+							<div class="form-group time">
+								<input type="text" class="time-control" size="12" value="오후 12시 00분">
+								<button type="button" class="btn form-btn form-time"></button>
+							</div>
+						</div>
+					</div>
+					<div class="form-item">
+						<p>종료일시</p>
+						<div class="form-box">
+							<div class="form-group date">
+								<input type="text" class="form-control" size="10" value="2020. 2. 28">
+								<span class="date-area">2020. 2. 28</span>
+								<button type="button" class="btn form-btn form-calendar"></button>
+							</div>
+							<div class="form-group time">
+								<input type="text" class="time-control" size="12" value="오후 12시 00분">
+								<button type="button" class="btn form-btn form-time"></button>
+							</div>
+						</div>
+					</div>
+					<div class="form-item">
+						<p>반복</p>
+						<div class="form-box">
+							<div class="list-popup">
+								<button type="button" class="list-popup-btn"><span>반복 없음</span><img src="assets/images/arrow-right.svg" class="sm" alt=""></button>
+								<div class="list-popup-menu pos-right" style="transform:translate3d(87px, 0, 0)">
+									<a href="" class="list-popup-item">반복 없음</a>
+									<a href="" class="list-popup-item">매일</a>
+									<a href="" class="list-popup-item">매주</a>
+									<a href="" class="list-popup-item">매월</a>
+									<a href="" class="list-popup-item">매년</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-item post-cnt" style="height:154px;">
+						<textarea class="form-textarea" placeholder="일정 내용을 작성해 주세요."></textarea>
+					</div>
+				</div>
+
+				<div class="popup-form-btm">
+					<div class="form-add-btn">
+						<ul class="clearfix">
+							<li><a href=""><img src="assets/images/image.svg" alt=""></a></li>
+							<li><a href=""><img src="assets/images/file.svg" alt=""></a></li>
+						</ul>
+
+						<div class="form-temp-save"><a href="" class="txt-btn">임시저장</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// popup-body -->
+
+		<!-- popup footer -->
+		<div class="popup-footer">
+			<div class="btn-group rt">
+				<button type="button" class="btn primary navi" disabled>등록</button>
+			</div>
+		</div>
+		<!--// popup footer -->
+	</div>
+</div>
+</body>
+</html>

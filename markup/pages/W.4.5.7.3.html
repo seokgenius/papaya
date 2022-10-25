@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<meta content="" property="og:title" />
+	<meta content="" property="og:url" />
+	<meta content="" property="og:description" />
+	<meta content="" property="og:image" />
+	<meta content="website" property="og:type" />
+	<meta content="" property="og:site_name" />
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/pages.css" />
+</head>
+
+<body>
+<div class="popup">
+	<!-- popup-dialog : active 시 화면 노출 -->
+	<div class="popup-dialog active" style="width:600px;">
+		<!-- popup header -->
+		<div class="popup-header">
+			<p class="popup-header-tit">클래스 기본 정보 관리</p>
+			<div class="popup-close">
+				<button class="close"><img src="assets/images/close.svg" alt=""></button>
+			</div>
+		</div>
+		<!--// popup header -->
+
+		<!-- popup-body -->
+		<div class="popup-body">
+			<div class="class-basic-info">
+				<div class="info-top">
+					<img src="assets/images/school-on.png" alt="">
+					<p class="group-type">학교</p>
+				</div>
+
+				<div class="info-cnt">
+					<div class="info-form">
+						<div class="form-group">
+							<label for="schoolName">학교 이름</label>
+							<button type="button" class="btn primary grey sm">검색</button>
+							<input type="text" class="form-control" id="schoolName" value="파파야 초등학교" disabled style="width:430px">
+						</div>
+						<div class="form-group mgt-40">
+							<label for="className">클래스 이름</label>
+							<input type="text" class="form-control" id="className" value="꿈꾸는 5학년 1반">
+						</div>
+						<div class="form-group mgt-40">
+							<span class="label">공개 범위 <a href="" class="tip-info"><img src="assets/images/info.svg" class="icon-img" alt=""></a></span>
+							<div class="checkbox-group">
+								<div class="btn-radio">
+									<input type="radio" name="privacy" id="closedClass" checked>
+									<label for="closedClass">비공개 클래스</label>
+								</div>
+								<div class="btn-radio">
+									<input type="radio" name="privacy" id="openedClass">
+									<label for="openedClass">오픈 클래스</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// popup-body -->
+
+		<!-- popup footer -->
+		<div class="popup-footer">
+			<div class="btn-group rt">
+				<button type="button" class="btn outline">취소</button>
+				<button type="button" class="btn primary navi">저장</button>
+			</div>
+		</div>
+		<!--// popup footer -->
+	</div>
+</div>
+</body>
+</html>

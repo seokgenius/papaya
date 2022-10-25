@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <path fill="#FFF" fill-opacity="0" d="M0 0H32V32H0z" transform="translate(-590 -207) translate(560 140) translate(0 50) translate(30 17)"/>
+                        <g>
+                            <path stroke="#57576D" stroke-linejoin="round" stroke-width="1.5" d="M23 6.065V22.5c0 .828-.672 1.5-1.5 1.5h-16c-.828 0-1.5-.672-1.5-1.5v-21C4 .672 4.672 0 5.5 0h11.138c.413 0 .808.17 1.092.471L23 6.065h0z" transform="translate(-590 -207) translate(560 140) translate(0 50) translate(30 17) translate(4 4)"/>
+                            <path stroke="#57576D" stroke-linejoin="round" stroke-width="1.5" d="M17 0L23 6.065 17 6.065z" transform="translate(-590 -207) translate(560 140) translate(0 50) translate(30 17) translate(4 4)"/>
+                            <g>
+                                <path fill="#57576D" stroke="#57576D" stroke-linejoin="round" stroke-width="1.5" d="M0 0.8H15V8.8H0z" transform="translate(-590 -207) translate(560 140) translate(0 50) translate(30 17) translate(4 4) translate(0 10.5)"/>
+                                <text fill="#FFF" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="6" font-weight="bold" transform="translate(-590 -207) translate(560 140) translate(0 50) translate(30 17) translate(4 4) translate(0 10.5)">
+                                    <tspan x="1.602" y="7">PDF</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

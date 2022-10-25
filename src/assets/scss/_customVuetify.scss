@@ -1,0 +1,189 @@
+
+//상단 캘린더 툴바 > 컨텐츠 container
+$calendarBorderColor: #f4f5f6;
+.v-toolbar__content{
+  border-bottom:1px solid $calendarBorderColor;
+}
+
+//캘린더>각 주차 별 묶음
+.theme--light.v-calendar-weekly{
+
+  //현재 month 가 아닌 이전/다음 month 의 요일
+  .v-calendar-weekly__day.v-outside,
+  .v-calendar-weekly__head-weekday.v-outside{
+    background-color: transparent;
+    .v-btn__content{
+      color:rgba(15, 15, 21, 0.2);
+    }
+  }
+
+  .v-calendar-weekly__day.v-past, //현재 일보다 지난 날짜
+  .v-calendar-weekly__day.v-future,// 현재 일보다 앞선 날짜
+  .v-calendar-weekly__day:not(:last-child),
+  .v-calendar-weekly__head-weekday:not(:last-child),
+  .v-calendar-weekly__head-weekday {
+    border-right: 0;
+  }
+  //일별 셀
+  .v-calendar-weekly__day{
+    border-bottom:1px solid $calendarBorderColor;
+  }
+  //1주 묶음
+  .v-calendar-weekly__week{
+    //맨 마지막 주의 날짜 셀들~
+    &:last-child .v-calendar-weekly__day {
+      border-bottom: 0;
+    }
+  }
+
+}
+//캘린더>상단 head 요일 group( 텍스트 / 버튼 / 사각 박스 )
+.v-calendar-weekly__head-weekday{
+  padding:6px 4px 0 4px;
+  font-size:14px;
+}
+
+
+//캘린더>각 요일>날짜(텍스트/버튼)
+.v-calendar-weekly__day-label{
+  margin:4px 0;
+  .v-btn {
+    font-size: 14px;
+    font-weight: bold;
+    height:32px;
+    width:32px;
+    //검은색으로 변경
+    &.primary{  background-color:#1d1d4c !important;}
+
+    /*달력 클릭했을때 배경 */
+    &:focus {
+      color: #fff;
+      &:before {
+        opacity: 1;
+        background-color:#1976d2 !important
+      }
+    }
+  }
+}
+
+
+.form-item>p{margin-bottom:0;}
+.v-text-field input{font-size:14px;}
+.form-group.time .v-icon{font-size:14px;}
+.time-select-menu.bg-white{
+  background-color:#fff !important;
+  .v-input__icon{
+    height:16px;
+    width:16px;
+    min-width:16px;
+    .v-icon{
+      font-size:16px;
+    }
+  }
+  .v-text-field.v-text-field--enclosed:not(.v-text-field--rounded)>.v-input__control>.v-input__slot{
+    padding:0 8px;
+  }
+
+}
+.form-group{
+  .v-text-field.v-text-field--enclosed:not(.v-text-field--rounded)>.v-input__control>.v-input__slot{
+    padding:0;
+  }
+  .v-text-field.v-text-field--solo .v-input__control{min-height:auto;}
+  &.date, &.time{
+    .v-text-field input{text-align:right;width:90px;}
+  }
+}
+
+.theme--light.v-calendar-weekly{
+  border-left:0;
+  border-top:0;
+}
+
+
+.v-calendar.v-calendar-events .v-calendar-weekly__head-weekday{margin-right:0;}
+//캘린더 관련 scss 추가
+.v-event-draggable {
+  padding-left: 6px;
+}
+
+.v-event-timed {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.v-event-drag-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  height: 4px;
+  cursor: ns-resize;
+
+  &::after {
+    display: none;
+    position: absolute;
+    left: 50%;
+    height: 4px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 16px;
+    margin-left: -8px;
+    opacity: 0.8;
+    content: '';
+  }
+
+  &:hover::after {
+    display: block;
+  }
+}
+
+// v-snackbar 관련
+.under-popup {
+  margin-bottom: calc(50vh - 238px);
+}
+.v-sheet.v-snack__wrapper {
+  border-radius: 0;
+}
+//전체 a태그에 vuetify 가 컬러를 변경하고 있어서 여기서 변경해줌. 그외에 a 태크에 color 는 전부 별도 설정 해야 함.
+.v-application a{ color: #0f0f15 !important; }
+/*curriculum 수정*/
+.v-application--wrap{
+  .curriculum-wrap a {color: #57576d !important;}
+  .curriculum-wrap p {margin-bottom: 0;}
+}
+/* myProfile */
+.mypage-cnt {
+  .v-text-field.v-text-field--solo .v-input__control {min-height: auto;}
+}
+.v-application p {margin-bottom: 0;}
+.v-application ul{padding-left:0;}
+
+.v-application .grey {
+  background-color: #f4f5f6!important;
+  border-color: #373749!important;
+}
+
+.v-application .form-message.error{
+   background-color:transparent!important;
+   border-color:transparent!important;
+}
+.v-application .btn.primary{
+  background-color: #ff4d4d!important;
+  border-color:transparent!important;
+}
+.v-application .btn.navi{
+  background-color: #1d1d4c!important;
+  border-color: transparent !important;
+}
+.v-text-field.v-text-field--solo .v-input__control{
+  min-height:42px;
+  input{ max-height: 0;}
+}
+.v-text-field.disabled{
+  opacity: 0.5;
+  cursor: default;
+}
+/* 닉네임 중복 확인 */
+.v-application .error {background-color: transparent !important;}
+.v-date-picker-table__events > div{width:5px;height:5px;}

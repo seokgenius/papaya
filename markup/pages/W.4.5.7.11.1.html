@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<meta content="" property="og:title" />
+		<meta content="" property="og:url" />
+		<meta content="" property="og:description" />
+		<meta content="" property="og:image" />
+		<meta content="website" property="og:type" />
+		<meta content="" property="og:site_name" />
+
+		<link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/pages.css" />
+	</head>
+
+	<body>
+		<div class="popup">
+			<!-- popup-dialog : active 시 화면 노출 -->
+			<div class="popup-dialog active" style="width:540px;">
+				<!-- popup header -->
+				<div class="popup-header">
+					<div class="popup-icon withdraw"></div>
+					<div class="popup-close">
+						<button class="close"><img src="assets/images/close.svg" alt=""></button>
+					</div>
+				</div>
+				<!--// popup header -->
+
+				<!-- popup body -->
+				<div class="popup-body">
+					<div class="popup-cnt">
+						<h2 class="popup-tit">클래스 탈퇴하기</h2>
+						<p class="popup-txt">
+							<strong>꿈꾸는 5학년 1반</strong> 클래스 탈퇴 전 꼭 확인하세요.<br>
+							클래스에서 탈퇴 시 작성한 글, 사진, 댓글 등을 삭제하거나 수정할 수 없습니다.<br>
+							원하시면 탈퇴 전에 삭제 혹은 수정하시기 바랍니다.
+						</p>
+
+						<div class="popup-input">
+							<div class="btn-checkbox">
+								<input type="checkbox" id="withdraw">
+								<label for="withdraw">확인하였으며 이 클래스에 탈퇴하겠습니다.</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--// popup body -->
+
+				<!-- popup footer -->
+				<div class="popup-footer">
+					<div class="btn-group rt">
+						<button type="button" class="btn outline">취소</button>
+						<button type="button" class="btn primary navi" disabled>탈퇴하기</button>
+					</div>
+				</div>
+				<!--// popup footer -->
+			</div>
+		</div>
+	</body>
+</html>

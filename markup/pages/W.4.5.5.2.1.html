@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title></title>
+	<meta content="" property="og:title" />
+	<meta content="" property="og:url" />
+	<meta content="" property="og:description" />
+	<meta content="" property="og:image" />
+	<meta content="website" property="og:type" />
+	<meta content="" property="og:site_name" />
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/pages.css" />
+</head>
+
+<body>
+<div class="popup">
+	<!-- popup-dialog : active 시 화면 노출 -->
+	<div class="popup-dialog active" style="width:600px;">
+		<!-- popup header -->
+		<div class="popup-header">
+			<div class="popup-icon edu"></div>
+			<div class="popup-close">
+				<button class="close"><img src="assets/images/close.svg" alt=""></button>
+			</div>
+		</div>
+		<!--// popup header -->
+
+		<!-- popup-body -->
+		<div class="popup-body">
+			<div class="popup-cnt">
+				<p class="popup-txt type2">교육과정</p>
+				<h2 class="popup-tit pdb-0">1 회차 수업</h2>
+			</div>
+
+			<div class="popup-form">
+				<div class="popup-form-top">
+					<div class="form-item">
+						<input type="text" class="form-control popup-type" placeholder="수업 제목을 20자 이내로 작성해 주세요.">
+					</div>
+				</div>
+				<div class="popup-form-cnt">
+					<div class="form-item">
+						<p>수업 날짜</p>
+						<div class="form-box">
+							<div class="form-group date">
+								<button class="btn only-ico-btn sm mgr-10"><img src="assets/images/delete.svg" alt=""></button>
+								<input type="text" class="form-control" size="10" value="2020. 2. 28">
+								<span class="date-area">2020. 2. 28</span>
+								<button type="button" class="btn form-btn form-calendar active"></button>
+							</div>
+						</div>
+					</div>
+					<div class="form-item">
+						<p>수업 시작 시간</p>
+						<div class="form-box">
+							<div class="form-group time">
+								<button type="button" class="btn form-btn form-delete"></button>
+								<input type="text" class="time-control" size="12" value="오후 12시 00분">
+								<button type="button" class="btn form-btn form-time"></button>
+							</div>
+						</div>
+					</div>
+					<div class="form-item">
+						<p>수업 종료 시간</p>
+						<div class="form-box">
+							<div class="form-group time">
+								<input type="text" class="time-control no-time" size="8" value="시간 없음">
+								<button type="button" class="btn form-btn form-time"></button>
+							</div>
+						</div>
+					</div>
+					<div class="form-item post-cnt" style="height:120px;">
+						<textarea class="form-textarea" placeholder="수업 내용을 100자 이내로 작성해 주세요."></textarea>
+					</div>
+				</div>
+
+				<div class="popup-form-btm">
+					<div class="form-add-btn">
+						<ul class="clearfix">
+							<li><a href=""><img src="assets/images/image.svg" alt=""></a></li>
+							<li><a href=""><img src="assets/images/file.svg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--// popup-body -->
+
+		<!-- popup footer -->
+		<div class="popup-footer">
+			<div class="btn-group rt">
+				<button type="button" class="btn primary navi" disabled>완료</button>
+			</div>
+		</div>
+		<!--// popup footer -->
+	</div>
+</div>
+</body>
+</html>

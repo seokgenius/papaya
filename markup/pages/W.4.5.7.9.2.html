@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<meta content="" property="og:title" />
+		<meta content="" property="og:url" />
+		<meta content="" property="og:description" />
+		<meta content="" property="og:image" />
+		<meta content="website" property="og:type" />
+		<meta content="" property="og:site_name" />
+
+		<link rel="stylesheet" type="text/css" href="./assets/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/pages.css" />
+	</head>
+
+	<body>
+		<div class="popup">
+			<!-- popup-dialog : active 시 화면 노출 -->
+			<div class="popup-dialog active" style="width:540px;">
+				<!-- popup header -->
+				<div class="popup-header">
+					<div class="popup-icon staff"></div>
+					<div class="popup-close">
+						<button class="close"><img src="assets/images/close.svg" alt=""></button>
+					</div>
+				</div>
+				<!--// popup header -->
+
+				<!-- popup body -->
+				<div class="popup-body">
+					<div class="popup-cnt">
+						<h2 class="popup-tit pdb-0">스탭 권한 설정 변경</h2>
+					</div>
+					<div class="member-activity">
+						<div class="member-management-list bd-none">
+							<ul>
+								<li class="member-item bd-none pdb-0">
+									<div class="member-type staff mgb-15">
+										<p class="member-name">김경희선생님</p>
+										<p class="member-tit">스탭 멤버</p>
+									</div>
+									<ul class="auth-list">
+										<li>
+											<p class="auth-tit">알림 관리</p>
+											<div class="auth-btn">
+												<div class="form-switcher">
+													<input type="checkbox" id="authNotice" checked>
+													<label for="authNotice"></label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<p class="auth-tit">일정 관리</p>
+											<div class="auth-btn">
+												<div class="form-switcher">
+													<input type="checkbox" id="authSchedule" checked>
+													<label for="authSchedule"></label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<p class="auth-tit">교육과정 관리</p>
+											<div class="auth-btn">
+												<div class="form-switcher">
+													<input type="checkbox" id="authEdu">
+													<label for="authEdu"></label>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<a href="" class="chang-type">일반 멤버로 전환하기</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--// popup body -->
+
+				<!-- popup footer -->
+				<div class="popup-footer">
+					<div class="btn-group rt">
+						<button type="button" class="btn outline">취소</button>
+						<button type="button" class="btn primary navi">변경하기</button>
+					</div>
+				</div>
+				<!--// popup footer -->
+			</div>
+		</div>
+	</body>
+</html>
